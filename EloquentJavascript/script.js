@@ -1,3 +1,4 @@
+/*
 let string;
 let counter;
 
@@ -39,3 +40,41 @@ do {
   console.log(string);
   counter++;
 } while (counter < 7);
+*/
+
+//optimized version
+let optimizedString = "";
+
+//for loop
+console.log("=== FOR LOOP ===");
+for (
+  optimizedString = "#";
+  optimizedString.length <= 7;
+  optimizedString += "#"
+) {
+  console.log(optimizedString);
+}
+
+console.log();
+
+//while loop
+console.log("=== WHILE LOOP ===");
+
+optimizedString = "#";
+
+while (optimizedString.length <= 7) {
+  console.log(optimizedString);
+  optimizedString += "#";
+}
+
+console.log();
+
+//do while loop
+console.log("=== DO WHILE LOOP ===");
+
+optimizedString = "#";
+
+do {
+  console.log(optimizedString);
+  optimizedString += "#";
+} while (optimizedString.length <= 7);
