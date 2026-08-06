@@ -1,0 +1,12 @@
+Exercise 1: Multiples & Sums (The Accumulator Pattern)
+Write a program that prints all numbers from 1 to 100, but with a twist:
+
+For numbers that are multiples of 4, print "Foo" instead of the number.
+
+For numbers that are multiples of 6, print "Bar" instead of the number.
+
+For numbers that are multiples of both 4 and 6, print "FooBar".
+
+At the very end of the loop, print the total sum of all the regular numbers that were printed (do not include the numbers that were replaced by "Foo", "Bar", or "FooBar").
+
+Goal: Practice combining string concatenation logic with numerical state tracking across loop iterations.
