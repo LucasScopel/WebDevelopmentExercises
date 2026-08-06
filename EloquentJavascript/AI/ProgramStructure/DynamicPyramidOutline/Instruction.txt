@@ -1,0 +1,16 @@
+Write a program that creates a hollow triangle/pyramid of a configurable height using # characters and spaces.
+
+For height = 5, the output should look exactly like this:
+    #
+   # #
+  #   #
+ #     #
+#########
+
+Rules:
+Top line has 1 #.
+Middle lines have # only at the left and right borders, with spaces inside.
+The bottom line is completely solid # characters.
+The program must work correctly if you change height to any number (e.g., height = 8).
+
+Goal: Practice calculating dynamic spacing based on loop variables $(x, y)$ coordinates.
