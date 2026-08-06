@@ -1,0 +1,3 @@
+Get the regular function structure and convert it to an arrow function version.
+
+Yeah, it was me who wrote that instruction this time :) 
