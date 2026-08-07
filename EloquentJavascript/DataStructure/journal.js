@@ -248,6 +248,8 @@ function tableFor(journal, event) {
   return table;
 }
 
+//Primitive way
+/* 
 function calculatePhi(table) {
   return (
     (table[3] * table[0] - table[2] * table[1]) /
@@ -257,6 +259,15 @@ function calculatePhi(table) {
         (table[1] + table[3]) *
         (table[0] + table[2]),
     )
+  );
+}
+*/
+
+//Better reading and understanding way
+function calculatePhi([n00, n01, n02, n03]) {
+  return (
+    (n11 * n00 - n10 * n01) /
+    Math.sqrt((n10 + n11) * (n00 + n01) * (n01 + n11) * (n00 + n10))
   );
 }
 
@@ -289,6 +300,7 @@ for (let event of allEventTypes(JOURNAL)) {
 */
 
 //Verifying possible solution
+/*
 for (let entry of JOURNAL) {
   if (
     entry.events.includes("peanuts") &&
@@ -300,3 +312,4 @@ for (let entry of JOURNAL) {
 console.log(
   "peanuts on teeth: " + calculatePhi(tableFor(JOURNAL, "peanuts on teeth")),
 );
+*/
